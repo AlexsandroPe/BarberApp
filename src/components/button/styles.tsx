@@ -30,7 +30,7 @@ export const Style = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     height: 52,
-    width: 300,
+    width: 250,
   },
   bgButtonTitle: {
     fontSize: 18,

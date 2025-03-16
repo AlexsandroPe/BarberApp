@@ -3,7 +3,10 @@ import Route from "./src/routes";
 
 import { SafeAreaView } from "react-native-safe-area-context";
 export default function App() {
-  return <Route />;
+  return <>
+  
+  <Route />
+  </>;
 }
 
 const styles = StyleSheet.create({

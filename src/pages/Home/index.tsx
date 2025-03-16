@@ -1,13 +1,35 @@
 import {
-  SafeAreaView,
+  Button,
   StyleSheet,
   Text,
-  TouchableOpacity,
   View,
+
 } from "react-native";
 
-import React, { useState } from "react";
-import ButtonMain from "../../components/button";
+import { SafeAreaView } from "react-native-safe-area-context";
+
+
+import React from "react";
+
 export default function Home() {
-  return <SafeAreaView></SafeAreaView>;
+
+  return (
+    <SafeAreaView style={Style.container}> 
+
+    <View style={Style.tabsHeader}>
+
+    </View>
+      <Text>home</Text>
+    </SafeAreaView>
+  );
 }
+
+const Style = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  tabsHeader: {
+    flexDirection: "row",
+    
+  }
+})

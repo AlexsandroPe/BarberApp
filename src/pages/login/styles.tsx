@@ -44,7 +44,7 @@ export const Styles = StyleSheet.create({
   },
 
   signButton: {
-    justifyContent: "center",
+    justifyContent: "flex-end",
     // borderWidth: 1,
     flex: 1,
   },
