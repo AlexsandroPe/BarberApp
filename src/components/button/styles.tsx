@@ -21,4 +21,20 @@ export const Style = StyleSheet.create({
     color: "#fff",
     fontWeight: "600",
   },
+
+  bgButton: {
+    borderWidth: 1,
+    borderRadius: 14,
+    paddingVertical: 4,
+    paddingHorizontal: 8,
+    justifyContent: "center",
+    alignItems: "center",
+    height: 52,
+    width: 300,
+  },
+  bgButtonTitle: {
+    fontSize: 18,
+    color: "#000",
+    fontWeight: "600",
+  },
 });

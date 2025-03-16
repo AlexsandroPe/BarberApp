@@ -5,18 +5,23 @@ import { useState } from "react";
 
 type props = {
   active?: boolean;
+  icon1: string;
+  icon2?: string;
 };
-export default function Input({ active }: props) {
+export default function Input({ active, icon1, icon2 }: props) {
+  const ft_icon = (icon: string) => {
+    return icon;
+  };
   return (
     <View style={Styles.inputParent}>
-      <Feather name="user" size={28} color="black" />
+      {active ? <Feather name={ft_icon(icon1)} size={20} color="black" /> :<Feather />}
       <TextInput
         style={Styles.input}
         placeholder="Digite Algo"
         cursorColor={"black"}
       />
 
-      {active ? <Feather name="eye-off" size={28} /> : <Feather />}
+      {active ? <Feather name={ft_icon(icon2)} size={20} color={"black"} /> : <Feather />}
     </View>
   );
 }

@@ -2,8 +2,8 @@ import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import Home from "../../pages/Home";
-import Profile from "../../pages/Cadastro";
 import Login from "../../pages/login";
+import Cadastro from "../../pages/Cadastro";
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
@@ -13,17 +13,9 @@ export default function () {
       initialRouteName="Login"
       screenOptions={{ headerBackVisible: true }}
     >
-      <Screen name="Login" component={Login} />
-      <Screen name="Home" component={Home} />
-      <Screen
-        name="Profile"
-        component={Profile}
-        options={{
-          headerBackVisible: true,
-          headerShown: true,
-          headerBackTitle: "Voltar",
-        }}
-      />
+      <Screen name="Login" component={Login} options={{ headerShown: false }} />
+      <Screen name="Cadastro" component={Cadastro} options={{ headerShown: false }} />
+      <Screen name="Home" component={Home} options={{ headerShown: false }} />
     </Navigator>
   );
 }

@@ -1,5 +1,7 @@
-import { SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import Route from "./src/routes";
+
+import { SafeAreaView } from "react-native-safe-area-context";
 export default function App() {
   return <Route />;
 }
