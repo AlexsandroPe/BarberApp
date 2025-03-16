@@ -2,7 +2,7 @@ import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import Home from "../../pages/Home";
-import Profile from "../../pages/Profile";
+import Profile from "../../pages/Cadastro";
 import Login from "../../pages/login";
 
 const { Navigator, Screen } = createNativeStackNavigator();
