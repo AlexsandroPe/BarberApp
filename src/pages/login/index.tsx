@@ -8,6 +8,8 @@ import ButtonMain from "../../components/button";
 import Input from "../../components/inputs";
 
 export default function Login() {
+  const handleLogin = () => {};
+
   return (
     <SafeAreaView style={Styles.container}>
       <View style={Styles.headerC}>
@@ -18,9 +20,25 @@ export default function Login() {
       </View>
       <View style={Styles.formsArea}>
         <View style={Styles.loginArea}>
-          <Input icon1="user" firstIcon={true} secondIcon={false}  placeholder="Digite seu email:" />
-          <Input icon1="lock" firstIcon={true} secondIcon={true} icon2="eye-off" placeholder="Digite sua senha:" />
-          <ButtonMain pageNav="Home" title="Login" buttonBG={false} />
+          <Input
+            icon1="mail"
+            firstIcon={true}
+            secondIcon={false}
+            placeholder="Digite seu email:"
+          />
+          <Input
+            icon1="lock"
+            firstIcon={true}
+            secondIcon={true}
+            icon2="eye-off"
+            placeholder="Digite sua senha:"
+          />
+          <ButtonMain
+            pageNav="Home"
+            title="Login"
+            buttonBG={false}
+            onPress={() => handleLogin}
+          />
 
           <Text style={Styles.forgotPass}>Forgot Password</Text>
         </View>

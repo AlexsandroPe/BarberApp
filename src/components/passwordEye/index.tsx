@@ -23,7 +23,7 @@ export default function PassEye({toggleText}: Props) {
     }
     return (
         <TouchableOpacity onPress={() => showOrNo(eyeState)}>
-            <Feather name={eyeState} size={20} color={"black"}/>
+            <Feather name={eyeState} size={22} color={"black"}/>
         </TouchableOpacity>
     )
 }

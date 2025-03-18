@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 export const Styles = StyleSheet.create({
   inputParent: {
-    height: 52,
+    height: 60,
     flexDirection: "row",
     borderWidth: 1,
     borderColor: "#000",
@@ -15,6 +15,7 @@ export const Styles = StyleSheet.create({
   },
 
   input: {
+    paddingVertical: 6,
     flex: 1,
   },
 

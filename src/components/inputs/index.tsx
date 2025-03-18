@@ -6,8 +6,8 @@ import { useState } from "react";
 import PassEye from "../passwordEye";
 
 type props = TextInputProps & {
-  firstIcon?: boolean;
-  secondIcon?: boolean;
+  firstIcon?: boolean | undefined;
+  secondIcon?: boolean | undefined;
   icon1: string;
   icon2?: string;
 };
@@ -24,7 +24,7 @@ export default function Input({ firstIcon, secondIcon, icon1, icon2, ...rest}: p
 
   return (
     <View style={Styles.inputParent}>
-      {firstIcon ? <Feather name={ft_icon(icon1)} size={20} color="black" /> :<Feather />}
+      {firstIcon ? <Feather name={ft_icon(icon1)} size={22} color="black" /> :<Feather />}
       <TextInput
         style={Styles.input}
         secureTextEntry ={text}

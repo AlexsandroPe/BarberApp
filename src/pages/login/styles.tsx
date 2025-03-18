@@ -14,14 +14,14 @@ export const Styles = StyleSheet.create({
 
   headerC: {
     // borderWidth: 1,
-    backgroundColor: "#fff",
+    // backgroundColor: "#fff",
     justifyContent: "center",
     alignItems: "center",
     flex: 2 / 3,
   },
 
   formsArea: {
-    backgroundColor: "#fff",
+    // backgroundColor: "#fff",
     flex: 1,
     alignItems: "center",
     gap: 30,
@@ -40,12 +40,13 @@ export const Styles = StyleSheet.create({
     fontSize: 17,
     // borderWidth: 1,
     alignSelf: "flex-end",
-    color: "#0484f0"
+    color: "#0484f0",
   },
 
   signButton: {
     justifyContent: "flex-end",
     // borderWidth: 1,
     flex: 1,
+    padding: 30,
   },
 });

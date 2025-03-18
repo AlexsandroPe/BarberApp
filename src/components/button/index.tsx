@@ -1,17 +1,17 @@
-import { Text, TouchableOpacity } from "react-native";
+import { Text, TouchableOpacity, TouchableOpacityProps } from "react-native";
 
 import { Style } from "./styles";
 
 import { useNavigation } from "@react-navigation/native";
 import React, { useState } from "react";
 
-type Props = {
+type Props = TouchableOpacityProps &{
   buttonBG?: boolean;
   title: string;
   pageNav: string;
 };
 
-export default function ButtonMain({ buttonBG, title, pageNav}: Props) {
+export default function ButtonMain({ buttonBG, title, pageNav, ...rest}: Props) {
   const navigation = useNavigation();
   // const [bgState, setBG] = useState(buttonBG);
 
