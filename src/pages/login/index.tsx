@@ -18,8 +18,8 @@ export default function Login() {
       </View>
       <View style={Styles.formsArea}>
         <View style={Styles.loginArea}>
-          <Input icon1="user" active={true} placeholder="Digite seu email:" />
-          <Input icon1="lock" active={true} icon2="eye-off" placeholder="Digite sua senha:"/>
+          <Input icon1="user" firstIcon={true} secondIcon={false}  placeholder="Digite seu email:" />
+          <Input icon1="lock" firstIcon={true} secondIcon={true} icon2="eye-off" placeholder="Digite sua senha:" />
           <ButtonMain pageNav="Home" title="Login" buttonBG={false} />
 
           <Text style={Styles.forgotPass}>Forgot Password</Text>
