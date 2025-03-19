@@ -1,4 +1,11 @@
-import { Button, ScrollView, StyleSheet, Text, View } from "react-native";
+import {
+  Button,
+  Image,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 
 import { SafeAreaView } from "react-native-safe-area-context";
 import MapView from "react-native-maps";
@@ -24,7 +31,28 @@ export default function Home() {
           }}
         />
         <View>
-          <Text>Hair salon images</Text>
+          <ScrollView
+            style={{ gap: 40, width: "100%" }}
+            horizontal
+            snapToAlignment="end"
+            centerContent
+            role="button"
+            disableIntervalMomentum
+            showsHorizontalScrollIndicator
+          >
+            <Image
+              source={require("../../assets/hairSalon1.png")}
+              style={{ height: 140 }}
+            />
+            <Image
+              source={require("../../assets/hairSalon1.png")}
+              style={{ height: 140 }}
+            />
+            <Image
+              source={require("../../assets/hairSalon1.png")}
+              style={{ height: 140 }}
+            />
+          </ScrollView>
         </View>
         <View>
           <Text>Hair salon iformations</Text>
