@@ -15,7 +15,7 @@ import ButtonMain from "../../components/button";
 
 export default function Home() {
   return (
-    <SafeAreaView style={Style.container}>
+    <SafeAreaView edges={["right", "bottom", "left"]} style={Style.container}>
       <View style={Style.headerHome}>
         <View style={Style.nav}>
           <Text>Agendamentos</Text>
@@ -23,17 +23,22 @@ export default function Home() {
         </View>
 
         <Image
-          source={require("../../assets/images.jpg")}
+          source={require("../../assets/userProfile.png")}
           borderRadius={30}
-          style={{ height: 80, width: 80 }}
+          style={{ height: 60, width: 60, borderWidth: 1, borderRadius: 50 }}
+        />
+      </View>
+
+      <View style={Style.searchArea}>
+        <Input
+          firstIcon={false}
+          secondIcon={false}
+          placeholder="Informe sua localização"
         />
       </View>
       <ScrollView style={{ flex: 1 }}>
-        <View>
-          <Input firstIcon={false} secondIcon={false} />
-        </View>
         <MapView
-          style={{ height: 400 }}
+          style={{ height: 282 }}
           zoomControlEnabled
           zoomEnabled
           initialRegion={{
@@ -44,18 +49,19 @@ export default function Home() {
           }}
         />
         <View style={{ width: "100%" }}>
-          <ScrollView style={{ width: "100%", padding: 40 }} horizontal>
+          <Text>Barbearia</Text>
+          <ScrollView style={{ width: "100%", paddingVertical: 35 }} horizontal>
             <Image
               source={require("../../assets/hairSalon1.png")}
-              style={{ height: 250, marginHorizontal: 10 }}
+              style={{ height: 200, marginHorizontal: 10 }}
             />
             <Image
               source={require("../../assets/hairSalon1.png")}
-              style={{ height: 250, marginHorizontal: 10 }}
+              style={{ height: 200, marginHorizontal: 10 }}
             />
             <Image
               source={require("../../assets/hairSalon1.png")}
-              style={{ height: 250, marginHorizontal: 10 }}
+              style={{ height: 200, marginHorizontal: 10 }}
             />
           </ScrollView>
         </View>
@@ -67,7 +73,9 @@ export default function Home() {
         </View>
       </ScrollView>
 
-      <ButtonMain title="Selecionar" pageNav="Servicos" />
+      <View style={{ alignItems: "center", padding: 20 }}>
+        <ButtonMain title="Selecionar" pageNav="Servicos" />
+      </View>
     </SafeAreaView>
   );
 }
@@ -75,19 +83,20 @@ export default function Home() {
 const Style = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    padding: 23,
   },
   headerHome: {
     flexDirection: "row",
-    borderWidth: 1,
+    paddingHorizontal: 35,
+    paddingVertical: 20,
+    // borderWidth: 1,
     width: "100%",
+    // backgroundColor: "#0022a3",
     alignItems: "center",
     justifyContent: "space-between",
   },
 
   nav: {
-    borderWidth: 1,
+    // borderWidth: 1,
     flexDirection: "row",
     gap: 28,
     alignItems: "flex-start",
@@ -98,5 +107,13 @@ const Style = StyleSheet.create({
     borderWidth: 1,
     justifyContent: "center",
     alignItems: "center",
+  },
+
+  searchArea: {
+    alignItems: "center",
+    paddingVertical: 28,
+    paddingHorizontal: 35,
+    width: "100%",
+    // borderWidth: 1,
   },
 });

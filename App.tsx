@@ -1,20 +1,23 @@
 import { StyleSheet, Text, View } from "react-native";
-import Routes from "./src/routes";
+import Routes from "./src/routes/index";
 
-import { SafeAreaView } from "react-native-safe-area-context";
+import {
+  SafeAreaProvider,
+  SafeAreaView,
+  initialWindowMetrics,
+} from "react-native-safe-area-context";
 export default function App() {
   return (
-    <>
-      <Routes />
-    </>
+    <SafeAreaProvider initialMetrics={initialWindowMetrics}>
+      <SafeAreaView style={styles.container}>
+        <Routes />
+      </SafeAreaView>
+    </SafeAreaProvider>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
   },
 });
