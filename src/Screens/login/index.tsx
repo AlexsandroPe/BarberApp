@@ -7,9 +7,10 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import ButtonMain from "../../components/button";
 import Input from "../../components/inputs";
 
+import { useNavigation } from "@react-navigation/native";
 export default function Login() {
   const handleLogin = () => {};
-
+  const navigation = useNavigation();
   return (
     <SafeAreaView style={Styles.container}>
       <View style={Styles.headerC}>
@@ -40,7 +41,13 @@ export default function Login() {
             onPress={() => handleLogin}
           />
 
-          <Text style={Styles.forgotPass}>Forgot Password</Text>
+          <Text
+            style={Styles.forgotPass}
+            onPress={() => {
+              navigation.navigate("Forgot Password");
+            }}>
+            Forgot Password
+          </Text>
         </View>
         <View style={Styles.signButton}>
           <ButtonMain pageNav="Cadastro" title="Cadastrar-se" buttonBG={true} />

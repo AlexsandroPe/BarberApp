@@ -2,12 +2,13 @@ import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 // import Home from "../../pages/Home";
-import Login from "../../pages/login";
-import Cadastro from "../../pages/Cadastro";
-import Home from "../../pages/Home";
-import Agend from "../../pages/Agendamentos";
-import Produtos from "../../pages/Produtos";
-import Servicos from "../../pages/Servicos";
+import Login from "../../Screens/login";
+import Cadastro from "../../Screens/Cadastro";
+import Home from "../../Screens/Home";
+import Agend from "../../Screens/Agendamentos";
+import Produtos from "../../Screens/Produtos";
+import Servicos from "../../Screens/Servicos";
+import ForgotPassword from "../../Screens/ForgotPassword";
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
@@ -32,6 +33,11 @@ export default function () {
       <Screen
         name="Produtos"
         component={Produtos}
+        options={{ headerShown: true }}
+      />
+      <Screen
+        name="Forgot Password"
+        component={ForgotPassword}
         options={{ headerShown: true }}
       />
     </Navigator>

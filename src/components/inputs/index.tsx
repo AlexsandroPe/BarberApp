@@ -47,7 +47,6 @@ export default function Input({
         cursorColor={"black"}
         {...rest}
       />
-
       {secondIcon ? <PassEye toggleText={toggle} /> : <Feather />}
     </View>
   );
