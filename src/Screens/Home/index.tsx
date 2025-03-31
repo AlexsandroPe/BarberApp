@@ -50,7 +50,12 @@ export default function Home() {
         />
         <View style={{ width: "100%" }}>
           <Text>Barbearia</Text>
-          <ScrollView style={{ width: "100%", paddingVertical: 35 }} horizontal>
+          <ScrollView
+            style={{
+              width: "100%",
+              paddingVertical: 35,
+            }}
+            horizontal>
             <Image
               source={require("../../assets/hairSalon1.png")}
               style={{ height: 200, marginHorizontal: 10 }}
@@ -73,7 +78,12 @@ export default function Home() {
         </View>
       </ScrollView>
 
-      <View style={{ alignItems: "center", padding: 20 }}>
+      <View
+        style={{
+          alignItems: "center",
+          padding: 20,
+          backgroundColor: "#535050",
+        }}>
         <ButtonMain title="Selecionar" pageNav="Servicos" />
       </View>
     </SafeAreaView>

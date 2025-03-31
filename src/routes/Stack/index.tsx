@@ -38,7 +38,7 @@ export default function () {
       <Screen
         name="Forgot Password"
         component={ForgotPassword}
-        options={{ headerShown: true }}
+        options={{ headerShown: false }}
       />
     </Navigator>
   );
