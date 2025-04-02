@@ -8,7 +8,7 @@ import React, { useState } from "react";
 type Props = TouchableOpacityProps & {
   buttonBG?: boolean;
   title: string;
-  pageNav?: string;
+  pageNav?: string | undefined;
 };
 
 export default function ButtonMain({
