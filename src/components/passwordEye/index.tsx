@@ -11,7 +11,7 @@ type Props = {
 
 export default function PassEye({toggleText}: Props) {
 
-    const [eyeState, setEyeState] = useState("eye");
+    const [eyeState, setEyeState] = useState("eye-off");
     function showOrNo(state: string){
         if(state == "eye"){
             setEyeState("eye-off")

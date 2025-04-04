@@ -28,7 +28,7 @@ export default function Input({
     return icon;
   };
 
-  const [text, setText] = useState(false);
+  const [text, setText] = useState(true);
 
   const toggle = () => {
     setText(!text);
