@@ -16,12 +16,14 @@ type props = TextInputProps & {
   secondIcon?: boolean | undefined;
   icon1?: string;
   icon2?: string;
+  type?: string | undefined;
 };
 export default function Input({
   firstIcon,
   secondIcon,
   icon1,
   icon2,
+  type,
   ...rest
 }: props) {
   const ft_icon = (icon: string) => {
@@ -43,7 +45,7 @@ export default function Input({
       )}
       <TextInput
         style={Styles.input}
-        secureTextEntry={text}
+        secureTextEntry={type === "password" ? text : false}
         cursorColor={"black"}
         {...rest}
       />

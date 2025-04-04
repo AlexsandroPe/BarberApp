@@ -16,11 +16,11 @@ export default function Cadastro() {
         />
       </View>
 
-      <Input firstIcon icon1="user" placeholder="Nome completo" />
+      <Input firstIcon icon1="user" placeholder="Nome completo"/>q
       <Input firstIcon icon1="mail" placeholder="Email" />
       <Input firstIcon icon1="smartphone" placeholder="Phone" />
-      <Input firstIcon icon1="lock" placeholder="Password" secondIcon />
-      <Input firstIcon icon1="lock" placeholder="Password" secondIcon />
+      <Input firstIcon icon1="lock" placeholder="Password" secondIcon type="password" />
+      <Input firstIcon icon1="lock" placeholder="Password" secondIcon type="password"/>
 
       <View style={Style.button}>
         <ButtonMain pageNav="Login" title="Cadastrar-se" buttonBG />

@@ -54,6 +54,7 @@ export default function Login() {
             secondIcon={true}
             icon2="eye-off"
             placeholder="Digite sua senha:"
+            type="password"
           />
           <ButtonMain
             pageNav="Home"
