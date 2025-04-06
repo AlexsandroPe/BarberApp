@@ -12,12 +12,13 @@ import MapView, { Marker } from "react-native-maps";
 import React, { useState } from "react";
 import Input from "../../components/inputs";
 import ButtonMain from "../../components/button";
+import {HomeStyles} from "./styles";
 
 export default function Home() {
   return (
-    <SafeAreaView edges={["right", "bottom", "left"]} style={Style.container}>
-      <View style={Style.headerHome}>
-        <View style={Style.nav}>
+    <SafeAreaView edges={["right", "bottom", "left"]} style={HomeStyles.container}>
+      <View style={HomeStyles.headerHome}>
+        <View style={HomeStyles.nav}>
           <Text>Agendamentos</Text>
           <Text>Produtos</Text>
         </View>
@@ -29,7 +30,7 @@ export default function Home() {
         />
       </View>
 
-      <View style={Style.searchArea}>
+      <View style={HomeStyles.searchArea}>
         <Input
           firstIcon={true}
           icon1="map-pin"
@@ -90,41 +91,3 @@ export default function Home() {
     </SafeAreaView>
   );
 }
-
-const Style = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  headerHome: {
-    flexDirection: "row",
-    paddingHorizontal: 35,
-    paddingVertical: 20,
-    // borderWidth: 1,
-    width: "100%",
-    // backgroundColor: "#0022a3",
-    alignItems: "center",
-    justifyContent: "space-between",
-  },
-
-  nav: {
-    // borderWidth: 1,
-    flexDirection: "row",
-    gap: 28,
-    alignItems: "flex-start",
-  },
-
-  userImg: {
-    borderRadius: 30,
-    borderWidth: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-
-  searchArea: {
-    alignItems: "center",
-    paddingVertical: 28,
-    paddingHorizontal: 35,
-    width: "100%",
-    // borderWidth: 1,
-  },
-});

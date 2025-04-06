@@ -16,7 +16,7 @@ type props = TextInputProps & {
   secondIcon?: boolean | undefined;
   icon1?: string;
   icon2?: string;
-  type?: string | undefined;
+  type?:  string | undefined;
 };
 export default function Input({
   firstIcon,
