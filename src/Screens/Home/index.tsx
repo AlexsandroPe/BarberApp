@@ -31,7 +31,8 @@ export default function Home() {
 
       <View style={Style.searchArea}>
         <Input
-          firstIcon={false}
+          firstIcon={true}
+          icon1="map-pin"
           secondIcon={false}
           placeholder="Informe sua localização"
         />
