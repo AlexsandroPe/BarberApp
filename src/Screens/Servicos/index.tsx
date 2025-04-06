@@ -3,7 +3,7 @@ import { Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Servicos() {
-  const services: string[] = ["degrade e bigode", "degrade"];
+  const services: string[] = ["Degrade e Bigode", "Degrade", "Sobrancelha"];
 
   return (
     <SafeAreaView style={{flex: 1}}>

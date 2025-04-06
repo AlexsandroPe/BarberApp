@@ -18,11 +18,6 @@ export default function Home() {
   return (
     <SafeAreaView edges={["right", "bottom", "left"]} style={HomeStyles.container}>
       <View style={HomeStyles.headerHome}>
-        <View style={HomeStyles.nav}>
-          <Text>Agendamentos</Text>
-          <Text>Produtos</Text>
-        </View>
-
         <Image
           source={require("../../assets/userProfile.png")}
           borderRadius={30}

@@ -15,7 +15,7 @@ export const HomeStyles = StyleSheet.create({
     borderBottomEndRadius: 20,
     // backgroundColor: "#A47963",
     alignItems: "center",
-    justifyContent: "space-between",
+    justifyContent: "flex-end",
   },
 
   nav: {
