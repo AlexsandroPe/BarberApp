@@ -15,13 +15,14 @@ export default function Cadastro() {
           style={Styles.headerLogo}
         />
       </View>
-
-      <Input firstIcon icon1="user" placeholder="Nome completo"/>q
+      <View style={Styles.formsArea}>
+      <Input firstIcon icon1="user" placeholder="Nome completo"/>
       <Input firstIcon icon1="mail" placeholder="Email" />
       <Input firstIcon icon1="smartphone" placeholder="Phone" />
       <Input firstIcon icon1="lock" placeholder="Password" secondIcon type="password" />
       <Input firstIcon icon1="lock" placeholder="Password" secondIcon type="password"/>
-
+      </View>
+    
       <View style={Style.button}>
         <ButtonMain pageNav="Login" title="Cadastrar-se" buttonBG />
       </View>

@@ -9,12 +9,26 @@ import {
 
 import { SafeAreaView } from "react-native-safe-area-context";
 import MapView, { Marker } from "react-native-maps";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Input from "../../components/inputs";
 import ButtonMain from "../../components/button";
 import {HomeStyles} from "./styles";
 
+
+
 export default function Home() {
+
+  const [image, setImage] = useState<number>();
+  const [ativo, setAtivo] = useState<boolean>()
+
+
+
+
+
+    
+  
+  
+  
   return (
     <SafeAreaView edges={["right", "bottom", "left"]} style={HomeStyles.container}>
       <View style={HomeStyles.headerHome}>

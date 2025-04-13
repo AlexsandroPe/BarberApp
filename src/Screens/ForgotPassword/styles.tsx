@@ -8,7 +8,7 @@ export const Styles = StyleSheet.create({
     borderEndStartRadius: 28,
     alignItems: "center",
     paddingHorizontal: 32,
-    paddingVertical: 71,
+    paddingVertical: 20,
   },
 
   Title: {
@@ -22,4 +22,13 @@ export const Styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: "400",
   },
+
+  closeScreen:{
+    // borderWidth: 1,
+    width: "100%",
+    height: 80,
+    justifyContent: "center",
+    alignItems: "flex-end", 
+    
+  }
 });

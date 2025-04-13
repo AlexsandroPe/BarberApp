@@ -19,7 +19,6 @@ const customAnimation = {
   1: {
     opacity: 1,
     translateX: 0,
-  
   },
 };
 

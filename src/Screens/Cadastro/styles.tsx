@@ -11,5 +11,6 @@ export const Style = StyleSheet.create({
 
   button: {
     alignSelf: "center",
+    position: "relative"
   },
 });
